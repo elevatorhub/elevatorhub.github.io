@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>승강기 정기검사와 안전관리 — 승강기 허브</title>
+<meta name="description" content="승강기 정기검사 항목, 법정 검사 주기, 월간 자체점검, 검사 전 준비 사항과 지적 사항 조치 방법을 정리했습니다.">
+<meta name="theme-color" content="#0f172a">
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<style>
+:root{--navy:#0f172a;--navy2:#1e293b;--amber:#f59e0b;--amber-dark:#d97706;--amber-bg:#fef3c7;--bg:#f1f5f9;--card:#fff;--text:#0f172a;--muted:#64748b;--border:#e2e8f0;--green:#15803d;--green-bg:#dcfce7;--red:#b91c1c;--red-bg:#fee2e2;--radius:14px;--shadow:0 1px 3px rgba(15,23,42,.08),0 4px 14px rgba(15,23,42,.06)}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans KR",Helvetica,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.65}
+.wrap{max-width:860px;margin:0 auto;padding:0 16px}
+a{color:var(--amber-dark)}
+header{background:var(--navy);color:#fff;position:sticky;top:0;z-index:50;box-shadow:0 2px 10px rgba(0,0,0,.25)}
+.header-in{display:flex;align-items:center;gap:14px;padding:13px 16px;max-width:1080px;margin:0 auto;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:#fff;flex:1;min-width:200px}
+.brand .mark{width:38px;height:38px;border-radius:9px;background:var(--amber);color:var(--navy);display:flex;align-items:center;justify-content:center;font-weight:900;font-size:19px;flex:none}
+.brand b{font-size:19px;letter-spacing:.2px}
+.brand b span{color:var(--amber)}
+.brand small{display:block;font-size:11.5px;color:#94a3b8;font-weight:400}
+nav.main-nav{display:flex;gap:4px;flex-wrap:wrap}
+nav.main-nav a{color:#cbd5e1;text-decoration:none;font-size:14px;font-weight:600;padding:8px 11px;border-radius:8px}
+nav.main-nav a:hover{background:var(--navy2);color:#fff}
+.article{padding:26px 0 12px}
+.back{margin-bottom:10px}
+.back a{font-weight:700;text-decoration:none}
+.back a:hover{text-decoration:underline}
+.crumb{font-size:12.5px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--amber-dark);margin-bottom:6px}
+.article h1{font-size:clamp(26px,4.5vw,34px);line-height:1.25;margin-bottom:10px}
+.lede{font-size:17px;color:#334155;margin-bottom:22px}
+.article h2{font-size:21px;margin:28px 0 8px;padding-top:6px;border-top:2px solid var(--amber);display:inline-block}
+.article h3{font-size:17px;margin:18px 0 6px}
+.article p{font-size:15.5px;color:#1e293b;margin-bottom:12px}
+.article ul,.article ol{margin:0 0 14px 22px;font-size:15.5px;color:#1e293b}
+.article li{margin-bottom:6px}
+.article table{border-collapse:collapse;width:100%;font-size:14px;margin:12px 0 16px;background:#fff;border-radius:10px;overflow:hidden;box-shadow:var(--shadow)}
+.article th{background:var(--navy);color:#fff;text-align:left;padding:10px 12px}
+.article td{padding:9px 12px;border-bottom:1px solid var(--border)}
+.article tr:nth-child(even) td{background:#f8fafc}
+.formula{font-size:13.5px;color:var(--muted);background:#fff;border:1px dashed var(--border);border-radius:8px;padding:10px 12px;margin:12px 0}
+.formula code{color:var(--navy);font-weight:600}
+.safety{background:var(--red-bg);border-left:4px solid var(--red);border-radius:10px;padding:14px 16px;margin:22px 0;font-size:14.5px;color:#7f1d1d}
+.related{background:var(--amber-bg);border:1px solid #fde68a;border-radius:12px;padding:16px 18px;margin:22px 0}
+.related h3{font-size:15px;margin:0 0 8px}
+.related ul{margin:0 0 0 20px}
+.related li{margin-bottom:4px}
+footer{background:var(--navy);color:#94a3b8;margin-top:44px;padding:30px 0 26px}
+footer .cols{display:grid;grid-template-columns:1fr;gap:20px}
+@media(min-width:640px){footer .cols{grid-template-columns:2fr 1fr 1fr}}
+footer h4{color:#fff;font-size:15px;margin-bottom:10px}
+footer p,footer a{font-size:13.5px;color:#94a3b8;text-decoration:none}
+footer a:hover{color:#fff}
+footer ul{list-style:none}
+footer li{margin-bottom:6px}
+.copy{border-top:1px solid #1e293b;margin-top:22px;padding-top:16px;font-size:12.5px;text-align:center}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-in">
+    <a class="brand" href="../index.html"><span class="mark">승</span><span><b>승강기 <span>허브</span></b><small>motorwindinghub.github.io/elevator-hub/</small></span></a>
+    <nav class="main-nav">
+      <a href="../index.html#calculators">계산기</a>
+      <a href="../index.html#reference">표준값 표</a>
+      <a href="../index.html#guides">가이드</a>
+      <a href="../index.html#faq">자주 묻는 질문</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap article">
+  <p class="back"><a href="../index.html">&larr; 승강기 허브로 돌아가기</a></p>
+  <p class="crumb">가이드 / 검사 · 안전관리</p>
+  <h1>승강기 정기검사와 안전관리</h1>
+  <p class="lede">승강기는 설치하고 나면 끝이 아닙니다. 법에 따라 정기검사를 받아야 하고, 관리주체는 매월 자체점검을 실시하며 안전관리를 계속해야 합니다. 검사를 제때 받지 않으면 과태료가 부과될 수 있고, 무엇보다 안전에 문제가 생길 수 있습니다. 이 가이드는 정기검사 항목과 법정 검사 주기, 월간 자체점검, 검사 전 준비 사항과 지적 사항 조치 방법을 정리했습니다.</p>
+
+  <h2>정기검사의 법적 근거와 주기</h2>
+  <p>승강기 정기검사는 승강기 안전관리법에 근거합니다. 승강기를 설치한 뒤에는 설치 검사를 받고, 이후에는 정해진 주기에 따라 정기검사를 받아야 합니다. 검사 주기는 승강기의 용도와 설치 연수, 검사 결과에 따라 달라지며, 일반적으로 매년 또는 격년으로 검사를 받습니다. 관리주체는 검사 유효기간이 끝나기 전에 검사기관에 검사를 신청해야 합니다. 검사 신청을 제때 하지 않으면 검사가 늦어지고, 유효기간이 지난 승강기를 운행하면 법 위반이 됩니다.</p>
+  <p>검사기관은 한국승강기안전공단 등 지정된 기관입니다. 검사관은 승강기 안전기준에 따라 설치 상태와 안전장치 동작, 하중 시험 등을 확인합니다. 검사 결과는 합격, 조건부 합격, 불합격으로 나뉩니다. 조건부 합격은 가벼운 지적 사항을 기한 안에 조치하면 되는 경우이고, 불합격은 안전에 중대한 문제가 있어 운행을 중단하고 조치한 뒤 재검사를 받아야 하는 경우입니다. 검사 결과와 지적 사항은 문서로 통보되며, 관리주체는 조치 결과를 검사기관에 제출해야 합니다.</p>
+
+  <h2>정기검사 항목</h2>
+  <p>정기검사는 승강기의 모든 주요 부분을 확인합니다. 먼저 외관과 설치 상태를 봅니다. 카와 승강장 도어의 동작, 도어 인터록, 카 내부 설비, 층 표시기와 조작반의 상태를 확인합니다. 다음으로 권상기와 와이어로프를 점검합니다. 로프의 단선과 마모, 직경 감소, 시브 홈의 마모를 확인하고, 권상기 제동 장치의 동작을 시험합니다. 가이드 레일과 가이드 슈의 상태, 완충기의 동작도 점검 항목입니다.</p>
+  <p>안전장치 동작 시험은 검사의 핵심입니다. 과속 조속기가 정격 속도를 초과했을 때 동작하는지, 비상 정지 장치가 카를 안전하게 멈추게 하는지, 최종 리미트 스위치가 카를 최상층과 최하층에서 멈추게 하는지를 확인합니다. 과부하 장치가 정격하중을 초과했을 때 동작하는지도 시험합니다. 하중 시험에서는 정격하중을 실어 운행 상태를 확인하고, 제동 거리를 측정합니다. 전기 설비에서는 절연 저항을 측정하고, 접지 상태와 배선 상태를 확인합니다. 비상 호출 장치와 비상등, 자동 구출 장치의 동작도 함께 점검합니다.</p>
+
+  <h2>월간 자체점검</h2>
+  <p>정기검사 사이에는 관리주체가 매월 자체점검을 실시해야 합니다. 자체점검은 유지보수 업체의 기술자가 수행하는 것이 일반적이며, 점검 결과는 기록으로 남겨야 합니다. 자체점검 항목에는 도어 동작과 도어 실 청소, 로프 육안 점검, 카 내부 설비 동작, 비상 호출 장치와 비상등 동작, 운행 소음과 진동 확인 등이 포함됩니다. 자체점검에서 이상이 발견되면 바로 조치하고, 조치할 수 없는 문제는 정기검사 전에 해결해야 합니다.</p>
+  <p>자체점검 기록은 정기검사 때 참고 자료가 됩니다. 기록이 잘 정리되어 있으면 검사관이 승강기의 관리 상태를 긍정적으로 평가하고, 검사도 원활하게 진행됩니다. 반대로 자체점검 기록이 없으면 관리가 소홀한 것으로 판단될 수 있습니다. 점검 기록에는 점검 날짜, 점검자, 점검 항목별 결과, 조치 내용을 빠짐없이 적어야 합니다. 로프 직경과 장력 측정값 같은 수치는 다음 점검과 비교할 수 있도록 숫자로 기록하는 것이 좋습니다. 점검 기록은 건물 관리실에서 보관하며, 검사기관이 요청하면 제출해야 합니다.</p>
+
+  <h2>검사 종류와 주기</h2>
+  <table>
+    <tr><th>검사 종류</th><th>시기</th><th>주요 내용</th><th>실시 주체</th></tr>
+    <tr><td>설치 검사</td><td>설치 완료 후</td><td>설치 상태, 안전장치, 하중 시험</td><td>지정 검사기관</td></tr>
+    <tr><td>정기검사</td><td>법정 주기마다</td><td>전 항목 점검, 안전장치 동작 시험</td><td>지정 검사기관</td></tr>
+    <tr><td>수시검사</td><td>주요 부품 교체·개조 시</td><td>교체·개조 부분 점검</td><td>지정 검사기관</td></tr>
+    <tr><td>자체점검</td><td>매월</td><td>도어, 로프, 안전장치 육안 점검</td><td>관리주체·유지보수 업체</td></tr>
+    <tr><td>정밀안전검사</td><td>노후 승강기 등</td><td>정밀 진단, 수명 평가</td><td>지정 검사기관</td></tr>
+  </table>
+  <p>검사 주기와 대상은 법령 개정이나 승강기 상태에 따라 달라질 수 있습니다. 관리주체는 검사 유효기간을 달력에 표시해 두고, 만료 한 달 전에는 검사 신청을 마치는 것이 안전합니다. 노후 승강기는 정밀안전검사 대상이 될 수 있으므로, 설치 연수가 오래된 승강기는 검사기관에 문의해 확인하는 것이 좋습니다.</p>
+
+  <h2>검사 전 준비 사항</h2>
+  <p>정기검사를 앞두고는 사전 점검을 통해 지적될 만한 부분을 미리 조치해야 합니다. 도어 실을 청소하고, 센서 표면을 닦고, 로프 상태를 확인합니다. 카 내부의 파손된 부품이 있으면 교체하고, 층 표시기와 버튼이 모두 동작하는지 확인합니다. 기계실과 피트를 정리하고, 검사관이 작업할 수 있는 공간을 확보합니다. 피트에 물이 고여 있으면 배수하고 방수 상태를 확인합니다. 검사에 필요한 서류도 준비합니다. 이전 검사 성적서, 자체점검 기록, 유지보수 계약서, 부품 교체 기록을 한곳에 모아 두면 검사 당일에 찾기 쉽습니다.</p>
+  <p>검사 당일에는 승강기 운행을 중단해야 하므로, 건물 이용자에게 미리 안내해야 합니다. 검사 일정과 운행 중단 시간을 공지하고, 다른 승강기나 계단을 이용하도록 안내합니다. 검사관의 질문에는 관리주체나 유지보수 기술자가 동석해 답하는 것이 좋습니다. 검사관이 지적하는 사항은 그 자리에서 메모하고, 조치 기한과 방법을 확인합니다. 검사 중에 발견된 문제는 즉시 조치할 수 있는 것과 부품 주문이 필요한 것으로 나뉘므로, 조치 계획을 세워 검사관에게 설명하면 신뢰를 얻을 수 있습니다.</p>
+
+  <p>검사 수수료와 일정도 미리 확인해야 합니다. 검사 수수료는 승강기 대수와 기종에 따라 정해지며, 검사기관에 신청할 때 안내받을 수 있습니다. 검사 일정은 신청 순서와 검사관 일정에 따라 정해지므로, 유효기간 만료에 임박해 신청하면 원하는 날짜를 잡기 어려울 수 있습니다. 검사 당일에는 유지보수 업체의 기술자가 현장에 있어야 검사관의 요청에 바로 대응할 수 있습니다. 기술자가 동석하지 않으면 검사관이 확인하려는 부분을 직접 살펴봐야 해 검사가 늦어질 수 있습니다. 검사 결과는 통상 며칠 안에 문서로 통보되며, 합격이면 검사 성적서를 받아 보관하고 다음 검사 일정을 달력에 표시합니다.</p>
+
+  <h2>노후 승강기 관리</h2>
+  <p>설치한 지 15년이 넘은 승강기는 노후 승강기로 분류되어 정밀안전검사 대상이 될 수 있습니다. 노후 승강기는 주요 부품의 마모가 진행되고, 제어반의 전자 부품 수명이 다해 고장이 잦아집니다. 정밀안전검사에서는 로프와 권상기, 제어반, 안전장치를 정밀하게 진단하고, 남은 수명을 평가합니다. 검사 결과에 따라 부품 교체나 개조, 또는 전면 교체가 권고될 수 있습니다. 관리주체는 정밀안전검사 결과를 보고 수리 계획을 세우고 예산을 확보해야 합니다.</p>
+  <p>노후 승강기의 관리에서 중요한 것은 부품 수급입니다. 오래된 기종은 단종된 부품이 많아, 고장이 나도 부품을 구하기 어려울 수 있습니다. 자주 고장 나는 부품은 미리 확보해 두거나, 호환 부품을 확인해 두는 것이 좋습니다. 제어반이 노후화되어 고장이 잦다면, 제어반만 교체하는 부분 개조를 검토할 수 있습니다. 부분 개조를 하면 수시검사를 받아야 하며, 개조 후에는 안전장치 동작을 다시 확인해야 합니다. 전면 교체를 검토할 때는 교체 비용과 남은 건물 사용 연수, 이용자 불편을 함께 고려해야 합니다.</p>
+  <p>노후 승강기는 점검 주기를 짧게 잡는 것이 안전합니다. 월간 자체점검 외에도 분기마다 주요 부품을 집중 점검하고, 로프와 제동 장치, 안전장치의 상태를 꼼꼼히 확인합니다. 고장 신고가 잦아지면 고장 원인을 분석해 반복되는 부품을 교체하고, 같은 고장이 되풀이되지 않도록 조치합니다. 노후 승강기의 유지보수 비용은 새 승강기보다 높을 수 있으므로, 유지보수 비용 계산기에 노후 가산분을 반영해 예산을 세우는 것이 좋습니다. 관리주체는 노후 승강기의 상태를 이용자에게도 알려, 고장이 났을 때 이해를 구하는 것이 좋습니다.</p>
+
+  <h2>단계별 검사 준비 절차</h2>
+  <ol>
+    <li><strong>검사 일정 확인.</strong> 검사 유효기간을 확인하고, 만료 한 달 전에 검사기관에 정기검사를 신청합니다.</li>
+    <li><strong>사전 자체점검.</strong> 검사 전에 유지보수 업체와 함께 사전 점검을 실시하고, 지적될 만한 부분을 미리 조치합니다.</li>
+    <li><strong>서류 준비.</strong> 이전 검사 성적서, 자체점검 기록, 유지보수 계약서, 부품 교체 기록을 모아 둡니다.</li>
+    <li><strong>현장 정리.</strong> 기계실과 피트를 정리하고, 도어 실을 청소하며, 검사관이 작업할 공간을 확보합니다.</li>
+    <li><strong>이용자 안내.</strong> 검사 일정과 운행 중단 시간을 건물 이용자에게 미리 공지합니다.</li>
+    <li><strong>검사 동석.</strong> 검사 당일에는 관리주체나 유지보수 기술자가 동석해 검사관의 질문에 답하고 지적 사항을 메모합니다.</li>
+    <li><strong>지적 사항 조치.</strong> 검사 결과 지적 사항이 있으면 기한 안에 조치하고, 조치 결과를 검사기관에 제출합니다.</li>
+    <li><strong>재검사 대응.</strong> 불합격이나 조건부 합격인 경우 재검사를 신청하고, 조치 내용을 확인받아 합격을 받습니다.</li>
+    <li><strong>기록 보관.</strong> 검사 성적서와 조치 기록을 보관하고, 다음 검사 일정을 달력에 표시합니다.</li>
+  </ol>
+
+  <h2>흔한 문제</h2>
+  <ul>
+    <li><strong>검사 신청 지연:</strong> 유효기간을 놓치면 검사가 늦어지고 과태료가 부과될 수 있습니다. 만료 한 달 전 신청이 원칙입니다.</li>
+    <li><strong>자체점검 기록 부재:</strong> 기록이 없으면 관리 소홀로 판단될 수 있습니다. 매월 점검 결과를 빠짐없이 기록해야 합니다.</li>
+    <li><strong>지적 사항 방치:</strong> 조건부 합격의 지적 사항을 기한 안에 조치하지 않으면 다음 검사에서 불합격이 될 수 있습니다.</li>
+    <li><strong>피트 침수:</strong> 피트에 물이 고이면 완충기와 하부 부품이 부식되어 검사에서 지적됩니다. 방수와 배수를 먼저 해결해야 합니다.</li>
+    <li><strong>로프 폐기 기준 초과:</strong> 로프 단선이나 직경 감소가 기준을 넘으면 교체해야 합니다. 검사 전에 로프 상태를 확인합니다.</li>
+    <li><strong>비상 장치 배터리 방전:</strong> 비상등과 호출 장치 배터리가 방전되면 검사에서 지적됩니다. 배터리 상태를 정기적으로 확인합니다.</li>
+  </ul>
+
+  <h2>자주 묻는 질문</h2>
+  <h3>정기검사를 받지 않으면 어떻게 되나요?</h3>
+  <p>정기검사를 받지 않고 승강기를 운행하면 승강기 안전관리법에 따라 과태료가 부과될 수 있습니다. 더 중요한 것은 안전 문제입니다. 검사를 받지 않으면 로프 손상이나 안전장치 고장을 제때 발견하지 못해 사고 위험이 커집니다. 검사 유효기간이 지난 승강기는 운행을 중단하고 검사를 받아야 합니다. 관리주체는 검사 일정을 책임지고 관리해야 합니다.</p>
+  <h3>정기검사 비용은 누가 부담하나요?</h3>
+  <p>정기검사 수수료는 관리주체가 부담하는 것이 일반적입니다. 검사 수수료는 승강기 대수와 기종, 검사 종류에 따라 정해집니다. 유지보수 계약에 검사 수수료 포함 여부가 명시되어 있는 경우도 있으므로 계약서를 확인해야 합니다. 검사에서 지적된 사항의 수리 비용은 별도로 발생하며, 부품 교체 비용은 관리주체와 유지보수 업체의 계약 조건에 따라 부담 주체가 달라집니다.</p>
+  <h3>자체점검은 누가 해야 하나요?</h3>
+  <p>자체점검은 관리주체의 책임이지만, 실제로는 유지보수 업체의 기술자가 수행하는 경우가 많습니다. 유지보수 계약에 자체점검 실시가 포함되어 있는지 확인해야 합니다. 자체점검은 매월 실시해야 하며, 결과를 기록으로 남겨야 합니다. 자체점검을 실시하지 않으면 정기검사에서 지적될 수 있고, 고장을 조기에 발견하지 못해 수리 비용이 커질 수 있습니다.</p>
+
+  <div class="safety"><strong>안전 수칙:</strong> 검사 중에는 승강기 운행을 중단하고, 검사관이 작업하는 승강로에는 관계자 외 출입을 통제해야 합니다. 검사관이 카 위에 올라가 작업할 때는 전원을 차단하고 잠금 장치를 걸어야 합니다. 하중 시험 중에는 카 내부와 승강로 주변에 사람이 들어가지 않도록 통제하고, 시험이 끝난 뒤에는 안전장치가 정상으로 복구되었는지 확인해야 합니다.</div>
+
+  <div class="related">
+    <h3>관련 계산기</h3>
+    <ul>
+      <li><a href="../index.html#calc-maintenance">유지보수 비용 계산기</a> — 정기검사비와 부품교체 적립금 예산</li>
+      <li><a href="../index.html#calc-capacity">승강기 용량·정원 계산기</a> — 검사 시 정격하중 기준 확인</li>
+    </ul>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <h4>승강기 허브</h4>
+        <p>승강기 설계·설치·유지보수를 위한 무료 계산기. KS B ISO 4190 기준 · 380V 3상 / 220V 단상 · 60Hz.</p>
+        <p style="margin-top:8px">motorwindinghub.github.io/elevator-hub/</p>
+      </div>
+      <div>
+        <h4>계산기</h4>
+        <ul>
+          <li><a href="../index.html#calc-capacity">승강기 용량·정원 계산기</a></li>
+          <li><a href="../index.html#calc-shaft">승강로 치수 계산기</a></li>
+          <li><a href="../index.html#calc-power">소요 동력 계산기</a></li>
+          <li><a href="../index.html#calc-traffic">교통량·평균 대기시간 계산기</a></li>
+          <li><a href="../index.html#calc-maintenance">유지보수 비용 계산기</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>가이드</h4>
+        <ul>
+          <li><a href="elevator-installation-basics.html">승강기 설치 기초</a></li>
+          <li><a href="wire-rope-inspection.html">와이어로프 점검과 교체</a></li>
+          <li><a href="door-troubleshooting.html">승강기 도어 고장과 대처</a></li>
+          <li><a href="power-outage-rescue.html">정전 시 갇힘 구조</a></li>
+          <li><a href="periodic-inspection.html">승강기 정기검사와 안전관리</a></li>
+          <li><a href="noise-vibration.html">승강기 소음·진동 저감 대책</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copy">© 2026 승강기 허브 · 모든 계산은 브라우저 안에서 처리됩니다 · 결과는 추정치입니다. 제조사 자료와 관련 법령을 확인하십시오.</div>
+  </div>
+</footer>
+
+</body>
+</html>

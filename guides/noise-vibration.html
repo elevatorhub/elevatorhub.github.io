@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>승강기 소음·진동 저감 대책 — 승강기 허브</title>
+<meta name="description" content="승강기 소음과 진동의 원인 분석, 권상기·가이드 레일·로프·도어별 점검 방법과 저감 대책을 단계별로 정리했습니다.">
+<meta name="theme-color" content="#0f172a">
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<style>
+:root{--navy:#0f172a;--navy2:#1e293b;--amber:#f59e0b;--amber-dark:#d97706;--amber-bg:#fef3c7;--bg:#f1f5f9;--card:#fff;--text:#0f172a;--muted:#64748b;--border:#e2e8f0;--green:#15803d;--green-bg:#dcfce7;--red:#b91c1c;--red-bg:#fee2e2;--radius:14px;--shadow:0 1px 3px rgba(15,23,42,.08),0 4px 14px rgba(15,23,42,.06)}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans KR",Helvetica,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.65}
+.wrap{max-width:860px;margin:0 auto;padding:0 16px}
+a{color:var(--amber-dark)}
+header{background:var(--navy);color:#fff;position:sticky;top:0;z-index:50;box-shadow:0 2px 10px rgba(0,0,0,.25)}
+.header-in{display:flex;align-items:center;gap:14px;padding:13px 16px;max-width:1080px;margin:0 auto;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:#fff;flex:1;min-width:200px}
+.brand .mark{width:38px;height:38px;border-radius:9px;background:var(--amber);color:var(--navy);display:flex;align-items:center;justify-content:center;font-weight:900;font-size:19px;flex:none}
+.brand b{font-size:19px;letter-spacing:.2px}
+.brand b span{color:var(--amber)}
+.brand small{display:block;font-size:11.5px;color:#94a3b8;font-weight:400}
+nav.main-nav{display:flex;gap:4px;flex-wrap:wrap}
+nav.main-nav a{color:#cbd5e1;text-decoration:none;font-size:14px;font-weight:600;padding:8px 11px;border-radius:8px}
+nav.main-nav a:hover{background:var(--navy2);color:#fff}
+.article{padding:26px 0 12px}
+.back{margin-bottom:10px}
+.back a{font-weight:700;text-decoration:none}
+.back a:hover{text-decoration:underline}
+.crumb{font-size:12.5px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--amber-dark);margin-bottom:6px}
+.article h1{font-size:clamp(26px,4.5vw,34px);line-height:1.25;margin-bottom:10px}
+.lede{font-size:17px;color:#334155;margin-bottom:22px}
+.article h2{font-size:21px;margin:28px 0 8px;padding-top:6px;border-top:2px solid var(--amber);display:inline-block}
+.article h3{font-size:17px;margin:18px 0 6px}
+.article p{font-size:15.5px;color:#1e293b;margin-bottom:12px}
+.article ul,.article ol{margin:0 0 14px 22px;font-size:15.5px;color:#1e293b}
+.article li{margin-bottom:6px}
+.article table{border-collapse:collapse;width:100%;font-size:14px;margin:12px 0 16px;background:#fff;border-radius:10px;overflow:hidden;box-shadow:var(--shadow)}
+.article th{background:var(--navy);color:#fff;text-align:left;padding:10px 12px}
+.article td{padding:9px 12px;border-bottom:1px solid var(--border)}
+.article tr:nth-child(even) td{background:#f8fafc}
+.formula{font-size:13.5px;color:var(--muted);background:#fff;border:1px dashed var(--border);border-radius:8px;padding:10px 12px;margin:12px 0}
+.formula code{color:var(--navy);font-weight:600}
+.safety{background:var(--red-bg);border-left:4px solid var(--red);border-radius:10px;padding:14px 16px;margin:22px 0;font-size:14.5px;color:#7f1d1d}
+.related{background:var(--amber-bg);border:1px solid #fde68a;border-radius:12px;padding:16px 18px;margin:22px 0}
+.related h3{font-size:15px;margin:0 0 8px}
+.related ul{margin:0 0 0 20px}
+.related li{margin-bottom:4px}
+footer{background:var(--navy);color:#94a3b8;margin-top:44px;padding:30px 0 26px}
+footer .cols{display:grid;grid-template-columns:1fr;gap:20px}
+@media(min-width:640px){footer .cols{grid-template-columns:2fr 1fr 1fr}}
+footer h4{color:#fff;font-size:15px;margin-bottom:10px}
+footer p,footer a{font-size:13.5px;color:#94a3b8;text-decoration:none}
+footer a:hover{color:#fff}
+footer ul{list-style:none}
+footer li{margin-bottom:6px}
+.copy{border-top:1px solid #1e293b;margin-top:22px;padding-top:16px;font-size:12.5px;text-align:center}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-in">
+    <a class="brand" href="../index.html"><span class="mark">승</span><span><b>승강기 <span>허브</span></b><small>motorwindinghub.github.io/elevator-hub/</small></span></a>
+    <nav class="main-nav">
+      <a href="../index.html#calculators">계산기</a>
+      <a href="../index.html#reference">표준값 표</a>
+      <a href="../index.html#guides">가이드</a>
+      <a href="../index.html#faq">자주 묻는 질문</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap article">
+  <p class="back"><a href="../index.html">&larr; 승강기 허브로 돌아가기</a></p>
+  <p class="crumb">가이드 / 소음 · 진동</p>
+  <h1>승강기 소음·진동 저감 대책</h1>
+  <p class="lede">승강기를 타면 윙 하는 소리, 덜컹거리는 진동, 문이 닫힐 때의 충격음을 느낄 때가 있습니다. 어느 정도의 소음은 정상이지만, 소음이 커지거나 진동이 심해지면 부품 마모나 설치 불량의 신호일 수 있습니다. 소음과 진동은 권상기, 가이드 레일, 로프, 도어, 제어 장치 등 여러 곳에서 발생하므로, 원인을 하나씩 좁혀 가는 것이 중요합니다. 이 가이드는 원인별 분석과 저감 방법을 단계별로 정리했습니다.</p>
+
+  <h2>소음과 진동의 종류</h2>
+  <p>승강기 소음은 크게 기계음, 마찰음, 충격음으로 나뉩니다. 기계음은 권상기 모터와 감속기, 인버터 팬에서 나는 소리입니다. 모터 베어링이 마모되면 윙윙거리는 소리가 커지고, 감속기 기어가 닳으면 덜컹거리는 소리가 납니다. 마찰음은 가이드 슈와 레일 사이, 로프와 시브 사이에서 나는 소리입니다. 가이드 슈가 마모되거나 윤활이 부족하면 끼익거리는 소리가 나고, 로프 장력이 맞지 않으면 시브에서 미끄러지는 소리가 납니다. 충격음은 도어가 닫힐 때, 카가 층에 멈출 때, 완충기에 닿을 때 나는 소리입니다.</p>
+  <p>진동도 소음과 함께 나타나는 경우가 많습니다. 카가 상하로 움직이면서 좌우로 흔들리면 가이드 레일이나 가이드 슈의 문제일 가능성이 높습니다. 카가 특정 구간에서만 흔들리면 그 구간의 레일 이음부나 수직도에 문제가 있는 것입니다. 카 전체가 일정하게 흔들리면 가이드 슈의 마모나 장력 불균형을 의심합니다. 진동이 심하면 승객이 불편을 느낄 뿐 아니라, 장기적으로 레일과 슈, 로프의 마모가 빨라집니다. 소음과 진동은 따로 떼어 볼 것이 아니라 함께 진단해야 합니다.</p>
+
+  <h2>원인별 분석 방법</h2>
+  <p>소음의 원인을 찾을 때는 소리가 언제, 어디에서 나는지를 먼저 파악합니다. 출발할 때만 소리가 나면 권상기나 제동 장치 문제일 가능성이 높습니다. 운행 중에 계속 소리가 나면 가이드 슈나 로프 문제일 가능성이 높습니다. 정지할 때 충격음이 나면 제동 조정이나 레벨링 문제일 수 있습니다. 소리가 나는 위치도 단서가 됩니다. 카 내부에서 들리면 카 설비나 도어 문제이고, 승강로에서 들리면 레일이나 로프 문제이며, 기계실에서 들리면 권상기 문제입니다. 스마트폰으로 소리를 녹음해 두면 기술자에게 전달할 때 도움이 됩니다.</p>
+  <p>진동은 측정기로 확인하는 것이 정확합니다. 진동 측정기를 카 바닥에 올려놓고 운행 중 진동 값을 측정하면, 기준을 초과하는지 객관적으로 판단할 수 있습니다. 진동이 특정 속도에서만 커지면 공진일 수 있고, 특정 층 구간에서만 커지면 레일 문제일 수 있습니다. 로프 장력이 맞지 않으면 카가 주기적으로 흔들리는 현상이 나타납니다. 장력 측정기로 각 로프의 장력을 재고 편차를 확인하면 원인을 좁힐 수 있습니다. 원인 분석이 끝나면 가장 가능성이 높은 부분부터 조치하고, 조치 후 다시 측정해 효과를 확인합니다.</p>
+
+  <h2>권상기와 제동 장치 소음</h2>
+  <p>권상기에서 나는 소음은 베어링과 감속기, 제동 장치에서 주로 발생합니다. 베어링이 마모되면 회전할 때 윙윙거리는 소리가 커지고, 심하면 베어링이 과열됩니다. 베어링 소음은 모터 정지 후에도 손으로 축을 돌려 보면 거친 느낌으로 확인할 수 있습니다. 감속기 기어가 마모되면 맞물릴 때마다 덜컹거리는 소리가 나고, 기어 오일이 부족하면 소음이 더 커집니다. 감속기 오일의 양과 오염 상태를 점검하고, 필요하면 오일을 교체합니다. 오일에 금속 가루가 섞여 있으면 기어 마모가 진행되고 있다는 신호입니다.</p>
+  <p>제동 장치는 카가 출발하고 정지할 때마다 동작하므로 소음의 원인이 되기 쉽습니다. 제동 패드가 마모되면 금속끼리 닿는 소리가 나고, 제동 갭이 맞지 않으면 출발할 때 쿵 하는 충격음이 납니다. 제동 패드의 두께를 측정하고 마모 한계에 도달했으면 교체합니다. 제동 갭은 제조사 기준에 맞게 조정하고, 제동 코일의 동작을 확인합니다. 인버터 구동 방식에서는 가속과 감속 패턴을 조정해 출발과 정지 충격을 줄일 수 있습니다. 가속 시간을 조금 늘리면 출발 충격이 줄고, 감속 패턴을 부드럽게 하면 정지 충격이 줄어듭니다.</p>
+
+  <h2>소음 발생 위치별 원인과 대책</h2>
+  <table>
+    <tr><th>발생 위치</th><th>가능한 원인</th><th>저감 대책</th></tr>
+    <tr><td>권상기·기계실</td><td>베어링 마모, 감속기 기어 마모</td><td>베어링 교체, 기어 오일 교체</td></tr>
+    <tr><td>가이드 레일 구간</td><td>레일 수직도 불량, 이음부 단차</td><td>레일 재정렬, 이음부 연마</td></tr>
+    <tr><td>가이드 슈</td><td>슈 마모, 윤활 부족</td><td>슈 교체, 윤활유 보충</td></tr>
+    <tr><td>로프·시브</td><td>장력 불균형, 시브 홈 마모</td><td>장력 조정, 시브 교체</td></tr>
+    <tr><td>도어</td><td>롤러 마모, 벨트 늘어짐</td><td>롤러 교체, 벨트 장력 조정</td></tr>
+    <tr><td>카 내부</td><td>카실 고정 불량, 팬 소음</td><td>고정 볼트 조임, 팬 교체</td></tr>
+  </table>
+  <p>위의 표는 발생 위치별로 흔한 원인과 대책을 정리한 것입니다. 소음이 한 곳에서만 나는 경우도 있지만, 여러 원인이 함께 작용하는 경우도 많습니다. 예를 들어 가이드 슈가 마모되면 레일 마찰음이 커지고, 그 진동이 카실로 전해져 카 내부 소음까지 커질 수 있습니다. 원인을 하나씩 해결하면서 소음이 어떻게 변하는지 확인하는 것이 효율적인 진단 방법입니다.</p>
+
+  <h2>가이드 레일과 가이드 슈 대책</h2>
+  <p>가이드 레일은 카의 움직임을 안내하는 기준이므로, 레일이 틀어지면 소음과 진동이 바로 나타납니다. 레일 수직도를 측정하고 기준을 벗어난 구간이 있으면 브래킷을 조정해 레일을 바로잡습니다. 레일 이음부에 단차가 있으면 카가 지날 때마다 덜컹거리는 충격이 생깁니다. 이음부는 연마해 단차를 없애고, 이음 볼트를 규정 토크로 조입니다. 레일 표면에 녹이 슬면 마찰이 커지므로, 표면을 청소하고 가이드 슈에 맞는 윤활유를 바릅니다.</p>
+  <p>가이드 슈는 레일과 직접 닿는 부품이라 마모가 빠릅니다. 슈의 라이닝이 닳으면 레일과 금속이 직접 닿아 소음이 커지고 레일이 손상됩니다. 슈 라이닝의 두께를 측정하고 마모 한계 전에 교체합니다. 롤러 가이드 슈를 사용하는 기종에서는 롤러 베어링의 상태를 확인합니다. 롤러가 헛돌거나 소음이 나면 베어링을 교체합니다. 슈와 레일 사이의 간격도 기준에 맞게 조정해야 합니다. 간격이 너무 좁으면 마찰이 커지고, 너무 넓으면 카가 흔들립니다. 조정 후에는 시험운전을 하며 소음과 진동이 줄었는지 확인합니다.</p>
+
+  <h2>설계 단계의 소음 대책</h2>
+  <p>소음과 진동은 설치 후에 고치는 것보다 설계 단계에서 막는 것이 훨씬 효과적입니다. 기계실이 있는 방식에서는 기계실 바닥에 방진 고무나 방진 스프링을 설치해 권상기 진동이 건물 구조로 전달되는 것을 막습니다. 기계실 벽과 바닥에 흡음재를 쓰면 소음이 복도나 인접 세대로 퍼지는 것을 줄일 수 있습니다. 기계실이 없는 방식에서는 권상기가 승강로 상부에 설치되므로, 권상기 받침대의 방진 설계가 더 중요합니다. 방진 고무가 노후화되면 진동 전달이 커지므로, 정기 점검 때 방진재의 상태를 확인하고 필요하면 교체합니다.</p>
+  <p>승강로와 주거 공간 사이의 벽체도 소음 전달 경로입니다. 승강로 벽이 얇으면 권상기 소음과 카 이동음이 인접 세대에 그대로 들립니다. 설계 단계에서 승강로 벽을 이중벽으로 하거나, 흡음재를 넣어 소음을 줄이는 것이 좋습니다. 승강로와 인접한 세대의 벽에는 콘센트나 배관을 매립하지 않는 것이 좋습니다. 배관을 타고 진동이 전달될 수 있기 때문입니다. 카 내부의 소음도 설계에서 고려할 수 있습니다. 카실 내장재에 흡음 성능이 있는 재료를 쓰면 운행 소음이 줄어들고, 카 팬의 소음도 저소음 팬을 선택하면 줄일 수 있습니다.</p>
+  <p>설계 단계에서 교통량과 속도도 함께 검토해야 합니다. 속도가 빠를수록 소음과 진동이 커지는 경향이 있으므로, 주거용 건물에서는 필요 이상으로 빠른 속도를 선택하지 않는 것이 좋습니다. 승강기 대수를 늘리면 한 대당 운행 횟수가 줄어들어 부품 마모가 늦어지고, 소음 발생도 줄어듭니다. 군 관리 방식을 적용하면 출근 시간대의 대기시간이 줄어들고, 불필요한 정지가 줄어들어 도어 소음도 감소합니다. 소음 대책은 한 가지 방법만으로 해결되지 않으므로, 방진과 흡음, 운행 패턴을 함께 검토하는 것이 효과적입니다.</p>
+
+  <h2>단계별 저감 절차</h2>
+  <ol>
+    <li><strong>증상 파악.</strong> 소음과 진동이 언제, 어디에서, 어떤 상황에서 발생하는지 이용자와 관리자로부터 자세히 듣고 기록합니다.</li>
+    <li><strong>소음 위치 확인.</strong> 카 내부, 승강로, 기계실을 차례로 살펴보며 소음이 가장 크게 들리는 위치를 찾습니다.</li>
+    <li><strong>진동 측정.</strong> 진동 측정기로 카 바닥의 진동 값을 측정하고, 기준을 초과하는지 확인합니다. 측정값과 측정 조건을 기록합니다.</li>
+    <li><strong>권상기 점검.</strong> 베어링 소음, 감속기 오일 상태, 제동 패드 마모와 제동 갭을 점검하고, 이상이 있으면 정비하거나 교체합니다.</li>
+    <li><strong>로프 장력 조정.</strong> 장력 측정기로 각 로프의 장력을 측정하고, 편차가 크면 소켓 볼트를 조정해 장력을 균등하게 맞춥니다.</li>
+    <li><strong>레일과 슈 정비.</strong> 레일 수직도와 이음부 단차를 확인하고, 가이드 슈 라이닝을 점검해 마모된 슈를 교체하고 간격을 조정합니다.</li>
+    <li><strong>도어 정비.</strong> 도어 롤러와 벨트, 레일을 점검하고, 마모된 롤러를 교체하며 벨트 장력을 조정합니다.</li>
+    <li><strong>인버터 패턴 조정.</strong> 가속과 감속 패턴을 부드럽게 조정해 출발과 정지 충격을 줄입니다. 조정 후에는 운행 상태를 확인합니다.</li>
+    <li><strong>재측정과 확인.</strong> 조치 후 소음과 진동을 다시 측정해 개선 효과를 확인합니다. 기준 안에 들지 않으면 원인을 다시 분석합니다.</li>
+  </ol>
+
+  <h2>흔한 문제</h2>
+  <ul>
+    <li><strong>윤활 부족:</strong> 가이드 슈와 레일에 윤활유가 부족하면 마찰음이 커집니다. 윤활은 정기 점검 항목입니다.</li>
+    <li><strong>슈 마모 방치:</strong> 슈 라이닝이 닳으면 레일이 직접 손상됩니다. 슈는 마모 한계 전에 교체해야 합니다.</li>
+    <li><strong>로프 장력 불균형:</strong> 장력이 맞지 않으면 카가 주기적으로 흔들립니다. 교체 후와 정기 점검 때 장력을 확인합니다.</li>
+    <li><strong>제동 갭 불량:</strong> 제동 갭이 맞지 않으면 출발할 때 충격음이 납니다. 제동 갭은 제조사 기준에 맞게 조정합니다.</li>
+    <li><strong>카실 고정 느슨함:</strong> 카실 고정 볼트가 풀리면 운행 중 덜컹거리는 소리가 납니다. 볼트 체결 상태를 점검합니다.</li>
+    <li><strong>인버터 패턴 급격:</strong> 가속과 감속이 급하면 출발과 정지 충격이 커집니다. 패턴을 부드럽게 조정합니다.</li>
+  </ul>
+
+  <h2>자주 묻는 질문</h2>
+  <h3>승강기 소음은 어느 정도가 정상인가요?</h3>
+  <p>승강기가 운행할 때는 어느 정도의 소음이 나는 것이 정상입니다. 권상기 회전음, 도어 개폐음, 카 이동음이 들리는 것은 자연스러운 일입니다. 문제가 되는 것은 평소보다 소음이 커졌거나, 새로운 소리가 나기 시작했거나, 진동이 함께 느껴지는 경우입니다. 소음 수준은 카 내부에서 측정하며, 기준을 초과하면 원인을 찾아 조치해야 합니다. 소음이 갑자기 커졌다면 부품 마모나 고장의 신호일 수 있으므로 점검을 받는 것이 좋습니다.</p>
+  <h3>소음이 심하면 승강기 수명이 짧아지나요?</h3>
+  <p>소음 자체가 수명을 줄이는 것은 아니지만, 소음의 원인이 되는 마모와 불균형은 수명을 줄입니다. 가이드 슈가 닳은 채로 운행하면 레일이 손상되고, 로프 장력이 맞지 않으면 로프 수명이 짧아지며, 베어링이 마모된 채로 운행하면 권상기 전체가 손상될 수 있습니다. 소음을 방치하면 작은 수리비가 큰 교체 비용으로 커집니다. 소음이 커졌을 때는 원인을 찾아 조기에 조치하는 것이 비용 면에서도 유리합니다.</p>
+  <h3>진동이 심한 승강기는 계속 타도 되나요?</h3>
+  <p>가벼운 진동은 운행에 지장이 없지만, 진동이 심해 승객이 불안감을 느낄 정도라면 점검을 받아야 합니다. 진동은 레일 불량, 슈 마모, 로프 장력 불균형 등 기계적인 문제의 신호일 수 있습니다. 진동을 방치하면 부품 마모가 빨라지고, 심한 경우 안전장치가 동작해 승강기가 멈출 수 있습니다. 진동이 심해졌다고 느끼면 관리실에 신고하고, 유지보수 업체의 점검을 받는 것이 안전합니다.</p>
+
+  <div class="safety"><strong>안전 수칙:</strong> 소음과 진동 점검을 위해 카 위에 올라가거나 승강로 안에 들어갈 때는 반드시 승강기 전원을 차단하고 잠금 장치를 걸어야 합니다. 권상기 베어링이나 감속기를 점검할 때는 회전부에 손이 닿지 않도록 주의하고, 뜨거운 부품에 화상을 입지 않도록 합니다. 레일 조정 작업 중에는 카가 움직이지 않는지 확인하고, 작업 구간에는 안전 표지를 설치하십시오.</div>
+
+  <div class="related">
+    <h3>관련 계산기</h3>
+    <ul>
+      <li><a href="../index.html#calc-shaft">승강로 치수 계산기</a> — 레일 설치 기준 치수 확인</li>
+      <li><a href="../index.html#calc-maintenance">유지보수 비용 계산기</a> — 슈·롤러 교체 예산 반영</li>
+    </ul>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <h4>승강기 허브</h4>
+        <p>승강기 설계·설치·유지보수를 위한 무료 계산기. KS B ISO 4190 기준 · 380V 3상 / 220V 단상 · 60Hz.</p>
+        <p style="margin-top:8px">motorwindinghub.github.io/elevator-hub/</p>
+      </div>
+      <div>
+        <h4>계산기</h4>
+        <ul>
+          <li><a href="../index.html#calc-capacity">승강기 용량·정원 계산기</a></li>
+          <li><a href="../index.html#calc-shaft">승강로 치수 계산기</a></li>
+          <li><a href="../index.html#calc-power">소요 동력 계산기</a></li>
+          <li><a href="../index.html#calc-traffic">교통량·평균 대기시간 계산기</a></li>
+          <li><a href="../index.html#calc-maintenance">유지보수 비용 계산기</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>가이드</h4>
+        <ul>
+          <li><a href="elevator-installation-basics.html">승강기 설치 기초</a></li>
+          <li><a href="wire-rope-inspection.html">와이어로프 점검과 교체</a></li>
+          <li><a href="door-troubleshooting.html">승강기 도어 고장과 대처</a></li>
+          <li><a href="power-outage-rescue.html">정전 시 갇힘 구조</a></li>
+          <li><a href="periodic-inspection.html">승강기 정기검사와 안전관리</a></li>
+          <li><a href="noise-vibration.html">승강기 소음·진동 저감 대책</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copy">© 2026 승강기 허브 · 모든 계산은 브라우저 안에서 처리됩니다 · 결과는 추정치입니다. 제조사 자료와 관련 법령을 확인하십시오.</div>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>와이어로프 점검과 교체 — 승강기 허브</title>
+<meta name="description" content="승강기 와이어로프 점검 방법, 소선 단선과 마모·부식의 폐기 기준, 장력 조정과 교체 절차를 단계별로 정리했습니다.">
+<meta name="theme-color" content="#0f172a">
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<style>
+:root{--navy:#0f172a;--navy2:#1e293b;--amber:#f59e0b;--amber-dark:#d97706;--amber-bg:#fef3c7;--bg:#f1f5f9;--card:#fff;--text:#0f172a;--muted:#64748b;--border:#e2e8f0;--green:#15803d;--green-bg:#dcfce7;--red:#b91c1c;--red-bg:#fee2e2;--radius:14px;--shadow:0 1px 3px rgba(15,23,42,.08),0 4px 14px rgba(15,23,42,.06)}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans KR",Helvetica,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.65}
+.wrap{max-width:860px;margin:0 auto;padding:0 16px}
+a{color:var(--amber-dark)}
+header{background:var(--navy);color:#fff;position:sticky;top:0;z-index:50;box-shadow:0 2px 10px rgba(0,0,0,.25)}
+.header-in{display:flex;align-items:center;gap:14px;padding:13px 16px;max-width:1080px;margin:0 auto;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:#fff;flex:1;min-width:200px}
+.brand .mark{width:38px;height:38px;border-radius:9px;background:var(--amber);color:var(--navy);display:flex;align-items:center;justify-content:center;font-weight:900;font-size:19px;flex:none}
+.brand b{font-size:19px;letter-spacing:.2px}
+.brand b span{color:var(--amber)}
+.brand small{display:block;font-size:11.5px;color:#94a3b8;font-weight:400}
+nav.main-nav{display:flex;gap:4px;flex-wrap:wrap}
+nav.main-nav a{color:#cbd5e1;text-decoration:none;font-size:14px;font-weight:600;padding:8px 11px;border-radius:8px}
+nav.main-nav a:hover{background:var(--navy2);color:#fff}
+.article{padding:26px 0 12px}
+.back{margin-bottom:10px}
+.back a{font-weight:700;text-decoration:none}
+.back a:hover{text-decoration:underline}
+.crumb{font-size:12.5px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--amber-dark);margin-bottom:6px}
+.article h1{font-size:clamp(26px,4.5vw,34px);line-height:1.25;margin-bottom:10px}
+.lede{font-size:17px;color:#334155;margin-bottom:22px}
+.article h2{font-size:21px;margin:28px 0 8px;padding-top:6px;border-top:2px solid var(--amber);display:inline-block}
+.article h3{font-size:17px;margin:18px 0 6px}
+.article p{font-size:15.5px;color:#1e293b;margin-bottom:12px}
+.article ul,.article ol{margin:0 0 14px 22px;font-size:15.5px;color:#1e293b}
+.article li{margin-bottom:6px}
+.article table{border-collapse:collapse;width:100%;font-size:14px;margin:12px 0 16px;background:#fff;border-radius:10px;overflow:hidden;box-shadow:var(--shadow)}
+.article th{background:var(--navy);color:#fff;text-align:left;padding:10px 12px}
+.article td{padding:9px 12px;border-bottom:1px solid var(--border)}
+.article tr:nth-child(even) td{background:#f8fafc}
+.formula{font-size:13.5px;color:var(--muted);background:#fff;border:1px dashed var(--border);border-radius:8px;padding:10px 12px;margin:12px 0}
+.formula code{color:var(--navy);font-weight:600}
+.safety{background:var(--red-bg);border-left:4px solid var(--red);border-radius:10px;padding:14px 16px;margin:22px 0;font-size:14.5px;color:#7f1d1d}
+.related{background:var(--amber-bg);border:1px solid #fde68a;border-radius:12px;padding:16px 18px;margin:22px 0}
+.related h3{font-size:15px;margin:0 0 8px}
+.related ul{margin:0 0 0 20px}
+.related li{margin-bottom:4px}
+footer{background:var(--navy);color:#94a3b8;margin-top:44px;padding:30px 0 26px}
+footer .cols{display:grid;grid-template-columns:1fr;gap:20px}
+@media(min-width:640px){footer .cols{grid-template-columns:2fr 1fr 1fr}}
+footer h4{color:#fff;font-size:15px;margin-bottom:10px}
+footer p,footer a{font-size:13.5px;color:#94a3b8;text-decoration:none}
+footer a:hover{color:#fff}
+footer ul{list-style:none}
+footer li{margin-bottom:6px}
+.copy{border-top:1px solid #1e293b;margin-top:22px;padding-top:16px;font-size:12.5px;text-align:center}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-in">
+    <a class="brand" href="../index.html"><span class="mark">승</span><span><b>승강기 <span>허브</span></b><small>motorwindinghub.github.io/elevator-hub/</small></span></a>
+    <nav class="main-nav">
+      <a href="../index.html#calculators">계산기</a>
+      <a href="../index.html#reference">표준값 표</a>
+      <a href="../index.html#guides">가이드</a>
+      <a href="../index.html#faq">자주 묻는 질문</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap article">
+  <p class="back"><a href="../index.html">&larr; 승강기 허브로 돌아가기</a></p>
+  <p class="crumb">가이드 / 점검 · 교체</p>
+  <h1>와이어로프 점검과 교체</h1>
+  <p class="lede">와이어로프는 카와 카운터웨이트를 매달고 있는 승강기의 생명줄입니다. 로프가 끊어지는 사고는 대부분 갑자기 일어나지 않습니다. 소선 단선이 조금씩 늘고, 마모와 부식이 진행되다가 어느 순간 한계에 도달하는 것입니다. 정기적으로 로프를 점검하고 폐기 기준에 도달하면 지체 없이 교체하는 것이, 로프 사고를 막는 유일한 방법입니다. 이 가이드는 점검 방법과 폐기 기준, 교체 절차를 단계별로 정리했습니다.</p>
+
+  <h2>와이어로프의 구조와 역할</h2>
+  <p>승강기용 와이어로프는 여러 가닥의 소선을 꼬아 만든 스트랜드를 다시 꼬아 만든 구조입니다. 중심에는 섬유 심이나 강심이 있고, 그 주위를 여섯 가닥 안팎의 스트랜드가 감싸고 있습니다. 로프는 권상기 시브를 돌아 카와 카운터웨이트를 연결하며, 권상기의 회전에 따라 카를 올리고 내립니다. 승강기 한 대에는 보통 세 가닥 이상의 로프가 사용되며, 각 로프가 하중을 나눠 받습니다. 한 가닥이 끊어져도 나머지 로프가 카를 지탱할 수 있도록 설계되지만, 그렇다고 해서 손상된 로프를 방치해도 된다는 뜻은 아닙니다.</p>
+  <p>로프는 운행할 때마다 굽힘과 마찰을 반복합니다. 시브를 지날 때마다 로프가 휘었다 펴지기를 반복하고, 로프끼리 또 시브 홈과 마찰하면서 소선이 조금씩 닳습니다. 사용 시간이 길어지면 소선이 끊어지기 시작하고, 로프 직경이 줄어들며, 내부 윤활유가 빠져나가 부식이 진행됩니다. 피트에 물이 고이거나 습기가 많은 승강로에서는 부식이 더 빨리 진행됩니다. 로프의 수명은 운행 횟수와 하중, 시브 상태, 설치 환경에 따라 달라지므로, 사용 연수만으로 교체 시기를 정해서는 안 됩니다.</p>
+
+  <h2>육안 점검 방법</h2>
+  <p>육안 점검은 매월 자체점검 때 실시하는 기본 점검입니다. 카를 최하층에 세우고 기계실에서 로프 전 구간을 눈으로 확인합니다. 소선이 튀어나와 있는지, 로프 표면에 녹이 슬어 있는지, 로프가 한쪽으로 납작해졌는지를 살펴봅니다. 소선 단선은 로프 표면에서 삐죽하게 튀어나온 가는 철사로 보입니다. 단선이 한 곳에 몰려 있으면 그 부분의 강도가 크게 떨어진 것이므로 주의 깊게 기록해야 합니다.</p>
+  <p>로프 직경도 측정해야 합니다. 버니어 캘리퍼스로 로프 직경을 여러 방향에서 측정해 공칭 직경과 비교합니다. 직경이 공칭 직경보다 7퍼센트 이상 줄어들면 폐기 기준에 도달한 것으로 봅니다. 직경 감소는 내부 소선의 마모와 심의 손상을 의미하므로, 겉보기에 멀쩡해 보여도 직경이 줄었다면 교체해야 합니다. 시브 홈의 마모도 함께 확인합니다. 시브 홈이 깊게 패이면 로프가 홈에 박혀 미끄러지지 않고, 로프와 시브의 접촉 면적이 줄어들어 로프 마모가 빨라집니다.</p>
+  <p>로프 장력도 점검 항목입니다. 각 로프의 장력이 균등하지 않으면 일부 로프만 하중을 받아 수명이 짧아집니다. 장력 측정기로 각 로프의 장력을 측정하고, 편차가 큰 로프는 소켓 볼트를 조정해 장력을 맞춥니다. 로프 소켓과 고정 클립의 상태도 확인합니다. 소켓에 균열이 있거나 클립이 풀려 있으면 로프가 빠질 위험이 있으므로 즉시 조치해야 합니다. 점검 결과는 날짜와 측정값, 단선 위치를 함께 기록해 다음 점검과 비교할 수 있게 합니다.</p>
+
+  <h2>폐기 기준</h2>
+  <p>와이어로프는 다음 중 어느 하나라도 해당하면 교체해야 합니다. 첫째, 소선 단선 수가 기준을 초과한 경우입니다. 일반적으로 로프 한 꼬임 길이 안에서 단선 수가 전체 소선 수의 10퍼센트를 넘거나, 한 스트랜드에서 단선 수가 집중된 경우를 폐기 기준으로 봅니다. 둘째, 로프 직경이 공칭 직경보다 7퍼센트 이상 감소한 경우입니다. 셋째, 로프에 심한 부식이 있거나, 로프가 꼬이거나 납작해진 변형이 있는 경우입니다. 넷째, 로프 심이 손상되어 로프가 부풀어 오르거나, 스트랜드가 풀어진 경우입니다.</p>
+  <p>폐기 기준에 근접한 로프는 점검 주기를 짧게 잡고 경과를 지켜봅니다. 단선이 조금씩 늘어나는 추세라면, 기준에 도달하기 전에 교체를 계획하는 것이 안전합니다. 교체 시기를 미루다가 로프가 끊어지면 카 추락 사고로 이어질 수 있고, 설령 비상 제동 장치가 동작하더라도 큰 충격과 수리 비용이 발생합니다. 로프 교체는 비용이 들지만, 사고 비용과 비교하면 훨씬 저렴한 예방 조치입니다. 유지보수 계약에 로프 교체 주기와 비용 부담 주체를 명시해 두면, 교체 시기가 되었을 때 협의가 수월해집니다.</p>
+
+  <h2>로프 종류별 점검 포인트</h2>
+  <table>
+    <tr><th>점검 항목</th><th>점검 방법</th><th>폐기 기준</th></tr>
+    <tr><td>소선 단선</td><td>육안 확인, 단선 수 기록</td><td>한 꼬임 길이 내 전체 소선의 10% 초과</td></tr>
+    <tr><td>직경 감소</td><td>캘리퍼스 측정</td><td>공칭 직경 대비 7% 이상 감소</td></tr>
+    <tr><td>부식</td><td>육안 확인, 표면 녹·피트 확인</td><td>심한 부식으로 소선 단면 감소</td></tr>
+    <tr><td>변형</td><td>육안 확인</td><td>꼬임, 납작해짐, 부풀어 오름</td></tr>
+    <tr><td>장력 불균형</td><td>장력 측정기</td><td>로프 간 장력 편차 과다 (조정 불가 시 교체)</td></tr>
+    <tr><td>소켓·클립</td><td>육안 확인, 체결 상태</td><td>균열, 풀림, 손상</td></tr>
+  </table>
+  <p>위의 기준은 일반적인 승강기 와이어로프 폐기 기준입니다. 제조사의 유지보수 지침이나 검사기관의 기준이 다를 수 있으므로, 실제 판정은 해당 기종의 지침과 검사 기준을 함께 확인해야 합니다. 점검 기록은 로프 교체 시기를 판단하는 근거가 되므로, 매월 측정값을 빠짐없이 기록하는 습관이 중요합니다.</p>
+
+  <h2>교체 전 준비 사항</h2>
+  <p>로프 교체는 계획적으로 진행해야 합니다. 먼저 교체할 로프의 규격을 확인합니다. 공칭 직경, 구조, 인장 강도, 길이가 기존 로프와 동일한지 제조사 사양서로 확인하고, 자재를 미리 준비합니다. 로프 길이는 승강로 높이와 권상기 위치, 소켓 여유분을 포함해 산정하며, 짧게 자르면 다시 사용할 수 없으므로 여유를 두고 준비합니다. 교체 작업은 승강기 운행을 중단해야 하므로, 건물 관리자와 일정을 협의해 이용이 적은 시간대를 잡습니다.</p>
+  <p>작업 전에는 카를 최하층에 세우고 전원을 차단한 뒤 잠금 장치를 겁니다. 카가 움직이지 않도록 제동 장치를 확인하고, 작업 공간에 안전 표지를 설치합니다. 새 로프를 승강로에 올릴 때는 로프가 꼬이지 않도록 드럼에서 풀어내며, 로프 끝에 손상 방지 캡을 씌웁니다. 오래된 로프를 제거하기 전에 새 로프의 한쪽 끝을 기존 로프에 연결해 두면, 기존 로프를 빼내면서 새 로프를 함께 끌어올릴 수 있어 작업이 수월해집니다. 이 방법은 현장에서 흔히 쓰는 요령이지만, 연결부가 풀리지 않도록 단단히 고정해야 합니다.</p>
+
+  <h2>로프 수명 연장을 위한 관리</h2>
+  <p>와이어로프의 수명은 관리 방법에 따라 크게 달라집니다. 가장 중요한 것은 적절한 윤활입니다. 로프 내부의 심과 소선 사이에는 윤활유가 스며 있어 마찰을 줄이고 부식을 막습니다. 운행을 거듭하면 윤활유가 빠져나가므로, 정기적으로 로프 전용 윤활유를 보충해야 합니다. 윤활유를 바를 때는 로프 표면만 덮는 것이 아니라 내부까지 스며들도록 천천히 도포합니다. 일반 그리스나 폐유를 사용하면 오히려 로프를 손상시킬 수 있으므로, 반드시 로프 전용 윤활유를 사용해야 합니다. 윤활 주기는 운행 횟수와 환경에 따라 다르지만, 보통 분기마다 한 번씩 점검하고 필요하면 보충합니다.</p>
+  <p>시브 홈 관리도 로프 수명에 직접적인 영향을 줍니다. 시브 홈이 마모되어 깊게 패이면 로프가 홈에 박혀 미끄러지지 않고, 로프와 시브의 접촉 압력이 커져 로프 마모가 빨라집니다. 시브 홈의 마모는 게이지로 측정하고, 마모 한계를 넘으면 시브를 교체하거나 홈을 다시 가공합니다. 로프 장력을 균등하게 유지하는 것도 중요합니다. 장력이 맞지 않으면 일부 로프만 하중을 받아 그 로프가 먼저 손상됩니다. 장력은 교체 직후와 정기 점검 때마다 측정해 조정합니다. 피트 방수와 승강로 습기 관리도 잊지 말아야 합니다. 습기가 많은 환경에서는 로프 부식이 빠르게 진행되므로, 피트 배수와 승강로 환기를 점검하고, 부식이 시작된 로프는 윤활과 함께 경과를 지켜봅니다.</p>
+
+  <h2>단계별 교체 절차</h2>
+  <ol>
+    <li><strong>운행 중단과 안전 조치.</strong> 승강기 운행을 중단하고 전원을 차단한 뒤 잠금 장치를 겁니다. 카를 최하층에 세우고, 작업 구간에 안전 표지를 설치합니다.</li>
+    <li><strong>기존 로프 상태 기록.</strong> 교체 전 로프의 단선 위치와 직경, 장력을 기록합니다. 기록은 교체 후 비교 자료와 유지보수 이력으로 활용합니다.</li>
+    <li><strong>새 로프 준비.</strong> 규격과 길이를 확인한 새 로프를 드럼에서 꼬이지 않게 풀어냅니다. 로프 끝을 정리하고 소켓 장착을 준비합니다.</li>
+    <li><strong>기존 로프 제거.</strong> 카와 카운터웨이트 측 소켓을 풀고 기존 로프를 권상기 시브에서 빼냅니다. 새 로프를 연결해 두었다면 기존 로프를 빼내면서 새 로프를 끌어올립니다.</li>
+    <li><strong>새 로프 설치.</strong> 새 로프를 시브에 걸고 카와 카운터웨이트에 고정합니다. 소켓은 규정대로 체결하고, 고정 클립이 빠지지 않도록 확인합니다.</li>
+    <li><strong>장력 조정.</strong> 장력 측정기로 각 로프의 장력을 측정하고, 소켓 볼트를 조정해 모든 로프의 장력을 균등하게 맞춥니다. 장력 편차는 기준 안에 들어야 합니다.</li>
+    <li><strong>윤활과 점검.</strong> 로프 표면에 전용 윤활유를 바르고, 시브 홈과 소켓 상태를 다시 확인합니다. 로프가 시브 홈에 제대로 앉았는지 육안으로 확인합니다.</li>
+    <li><strong>시험운전.</strong> 전원을 복구하고 무부하 시험운전을 한 뒤, 정격하중 시험을 수행합니다. 운행 중 로프의 흔들림과 소음을 확인하고, 장력을 다시 측정해 조정합니다.</li>
+    <li><strong>기록과 인수.</strong> 교체 날짜, 로프 규격, 장력 측정값을 기록하고 건물 관리자에게 인계합니다. 교체한 로프의 보증 기간과 다음 점검 일정을 함께 전달합니다.</li>
+  </ol>
+
+  <h2>흔한 문제</h2>
+  <ul>
+    <li><strong>단선 방치:</strong> 소선 단선이 한두 가닥이라고 방치하면 단선이 빠르게 늘어납니다. 단선이 발견되면 위치와 개수를 기록하고 추이를 지켜봐야 합니다.</li>
+    <li><strong>장력 불균형 방치:</strong> 장력이 맞지 않으면 일부 로프만 하중을 받아 그 로프가 먼저 끊어집니다. 교체 후 장력 조정은 필수이며, 정기 점검 때도 장력을 확인해야 합니다.</li>
+    <li><strong>시브 홈 마모:</strong> 시브 홈이 패이면 로프가 제대로 물리지 않고 미끄러지며, 로프 마모가 빨라집니다. 로프를 교체할 때 시브 홈 상태도 함께 점검합니다.</li>
+    <li><strong>부적절한 윤활:</strong> 일반 그리스를 로프에 바르면 내부로 스며들지 않고 표면만 덮어 부식을 가릴 수 있습니다. 로프 전용 윤활유를 사용해야 합니다.</li>
+    <li><strong>피트 침수로 인한 부식:</strong> 피트에 물이 고이면 로프 하단부터 부식이 진행됩니다. 피트 방수와 배수를 먼저 해결하지 않으면 새 로프도 금방 손상됩니다.</li>
+    <li><strong>규격이 다른 로프 사용:</strong> 직경이나 구조가 다른 로프를 쓰면 시브 홈과 맞지 않고 장력이 달라집니다. 반드시 제조사 사양서에 맞는 규격을 사용합니다.</li>
+  </ul>
+
+  <h2>자주 묻는 질문</h2>
+  <h3>와이어로프는 얼마나 자주 교체하나요?</h3>
+  <p>정해진 사용 연수는 없습니다. 운행 횟수와 하중, 환경에 따라 수명이 크게 달라지므로, 정기 점검에서 폐기 기준에 도달했는지를 보고 교체 시기를 정합니다. 일반적으로 주거용 건물에서는 10년에서 15년 정도 사용하지만, 이용이 많은 상업 건물에서는 더 빨리 교체해야 할 수 있습니다. 매월 점검 기록을 쌓아 두면 교체 시기를 합리적으로 판단할 수 있습니다.</p>
+  <h3>로프 한 가닥만 손상되면 그 가닥만 교체해도 되나요?</h3>
+  <p>원칙적으로는 모든 로프를 함께 교체하는 것이 좋습니다. 한 가닥만 새 로프로 바꾸면 새 로프와 낡은 로프의 신축성이 달라 장력이 고르게 맞지 않습니다. 비용을 아끼려다 장력 불균형이 생기면 나머지 로프의 수명도 짧아집니다. 다만 단선이 경미하고 나머지 로프 상태가 양호한 경우에는 전문가의 판단에 따라 부분 교체를 검토할 수 있습니다.</p>
+  <h3>로프 점검은 누가 하나요?</h3>
+  <p>매월 자체점검은 건물 관리주체나 유지보수 업체가 실시하고, 정기검사에서는 검사기관이 로프 상태를 확인합니다. 육안 점검과 직경 측정, 장력 측정은 유지보수 기술자가 수행하며, 폐기 기준 판정도 기술자의 몫입니다. 점검 결과에 의문이 있으면 검사기관이나 제조사에 문의해 확인하는 것이 안전합니다.</p>
+
+  <div class="safety"><strong>안전 수칙:</strong> 로프 교체 작업 중에는 반드시 승강기 전원을 차단하고 잠금 장치를 걸어야 합니다. 카 위에 올라가 작업할 때는 안전대를 착용하고, 로프를 당길 때는 장갑을 끼십시오. 로프 끝의 소선은 날카로우므로 맨손으로 만지지 마십시오. 작업 중 승강기가 움직이지 않도록 제동 장치를 확인하는 것을 잊지 마십시오.</div>
+
+  <div class="related">
+    <h3>관련 계산기</h3>
+    <ul>
+      <li><a href="../index.html#calc-maintenance">유지보수 비용 계산기</a> — 연간 유지보수 예산에 로프 교체 적립금 반영</li>
+      <li><a href="../index.html#calc-power">소요 동력 계산기</a> — 권상기 전동기와 로프 하중 조건 확인</li>
+    </ul>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <h4>승강기 허브</h4>
+        <p>승강기 설계·설치·유지보수를 위한 무료 계산기. KS B ISO 4190 기준 · 380V 3상 / 220V 단상 · 60Hz.</p>
+        <p style="margin-top:8px">motorwindinghub.github.io/elevator-hub/</p>
+      </div>
+      <div>
+        <h4>계산기</h4>
+        <ul>
+          <li><a href="../index.html#calc-capacity">승강기 용량·정원 계산기</a></li>
+          <li><a href="../index.html#calc-shaft">승강로 치수 계산기</a></li>
+          <li><a href="../index.html#calc-power">소요 동력 계산기</a></li>
+          <li><a href="../index.html#calc-traffic">교통량·평균 대기시간 계산기</a></li>
+          <li><a href="../index.html#calc-maintenance">유지보수 비용 계산기</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>가이드</h4>
+        <ul>
+          <li><a href="elevator-installation-basics.html">승강기 설치 기초</a></li>
+          <li><a href="wire-rope-inspection.html">와이어로프 점검과 교체</a></li>
+          <li><a href="door-troubleshooting.html">승강기 도어 고장과 대처</a></li>
+          <li><a href="power-outage-rescue.html">정전 시 갇힘 구조</a></li>
+          <li><a href="periodic-inspection.html">승강기 정기검사와 안전관리</a></li>
+          <li><a href="noise-vibration.html">승강기 소음·진동 저감 대책</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copy">© 2026 승강기 허브 · 모든 계산은 브라우저 안에서 처리됩니다 · 결과는 추정치입니다. 제조사 자료와 관련 법령을 확인하십시오.</div>
+  </div>
+</footer>
+
+</body>
+</html>

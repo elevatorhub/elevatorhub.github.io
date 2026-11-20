@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>정전 시 갇힘 구조 — 승강기 허브</title>
+<meta name="description" content="정전으로 승강기 안에 승객이 갇혔을 때의 대응 방법, 수동 구조 절차, 비상 전원 장치, 승객 안내 요령을 정리했습니다.">
+<meta name="theme-color" content="#0f172a">
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<style>
+:root{--navy:#0f172a;--navy2:#1e293b;--amber:#f59e0b;--amber-dark:#d97706;--amber-bg:#fef3c7;--bg:#f1f5f9;--card:#fff;--text:#0f172a;--muted:#64748b;--border:#e2e8f0;--green:#15803d;--green-bg:#dcfce7;--red:#b91c1c;--red-bg:#fee2e2;--radius:14px;--shadow:0 1px 3px rgba(15,23,42,.08),0 4px 14px rgba(15,23,42,.06)}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans KR",Helvetica,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.65}
+.wrap{max-width:860px;margin:0 auto;padding:0 16px}
+a{color:var(--amber-dark)}
+header{background:var(--navy);color:#fff;position:sticky;top:0;z-index:50;box-shadow:0 2px 10px rgba(0,0,0,.25)}
+.header-in{display:flex;align-items:center;gap:14px;padding:13px 16px;max-width:1080px;margin:0 auto;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:#fff;flex:1;min-width:200px}
+.brand .mark{width:38px;height:38px;border-radius:9px;background:var(--amber);color:var(--navy);display:flex;align-items:center;justify-content:center;font-weight:900;font-size:19px;flex:none}
+.brand b{font-size:19px;letter-spacing:.2px}
+.brand b span{color:var(--amber)}
+.brand small{display:block;font-size:11.5px;color:#94a3b8;font-weight:400}
+nav.main-nav{display:flex;gap:4px;flex-wrap:wrap}
+nav.main-nav a{color:#cbd5e1;text-decoration:none;font-size:14px;font-weight:600;padding:8px 11px;border-radius:8px}
+nav.main-nav a:hover{background:var(--navy2);color:#fff}
+.article{padding:26px 0 12px}
+.back{margin-bottom:10px}
+.back a{font-weight:700;text-decoration:none}
+.back a:hover{text-decoration:underline}
+.crumb{font-size:12.5px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--amber-dark);margin-bottom:6px}
+.article h1{font-size:clamp(26px,4.5vw,34px);line-height:1.25;margin-bottom:10px}
+.lede{font-size:17px;color:#334155;margin-bottom:22px}
+.article h2{font-size:21px;margin:28px 0 8px;padding-top:6px;border-top:2px solid var(--amber);display:inline-block}
+.article h3{font-size:17px;margin:18px 0 6px}
+.article p{font-size:15.5px;color:#1e293b;margin-bottom:12px}
+.article ul,.article ol{margin:0 0 14px 22px;font-size:15.5px;color:#1e293b}
+.article li{margin-bottom:6px}
+.article table{border-collapse:collapse;width:100%;font-size:14px;margin:12px 0 16px;background:#fff;border-radius:10px;overflow:hidden;box-shadow:var(--shadow)}
+.article th{background:var(--navy);color:#fff;text-align:left;padding:10px 12px}
+.article td{padding:9px 12px;border-bottom:1px solid var(--border)}
+.article tr:nth-child(even) td{background:#f8fafc}
+.formula{font-size:13.5px;color:var(--muted);background:#fff;border:1px dashed var(--border);border-radius:8px;padding:10px 12px;margin:12px 0}
+.formula code{color:var(--navy);font-weight:600}
+.safety{background:var(--red-bg);border-left:4px solid var(--red);border-radius:10px;padding:14px 16px;margin:22px 0;font-size:14.5px;color:#7f1d1d}
+.related{background:var(--amber-bg);border:1px solid #fde68a;border-radius:12px;padding:16px 18px;margin:22px 0}
+.related h3{font-size:15px;margin:0 0 8px}
+.related ul{margin:0 0 0 20px}
+.related li{margin-bottom:4px}
+footer{background:var(--navy);color:#94a3b8;margin-top:44px;padding:30px 0 26px}
+footer .cols{display:grid;grid-template-columns:1fr;gap:20px}
+@media(min-width:640px){footer .cols{grid-template-columns:2fr 1fr 1fr}}
+footer h4{color:#fff;font-size:15px;margin-bottom:10px}
+footer p,footer a{font-size:13.5px;color:#94a3b8;text-decoration:none}
+footer a:hover{color:#fff}
+footer ul{list-style:none}
+footer li{margin-bottom:6px}
+.copy{border-top:1px solid #1e293b;margin-top:22px;padding-top:16px;font-size:12.5px;text-align:center}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-in">
+    <a class="brand" href="../index.html"><span class="mark">승</span><span><b>승강기 <span>허브</span></b><small>motorwindinghub.github.io/elevator-hub/</small></span></a>
+    <nav class="main-nav">
+      <a href="../index.html#calculators">계산기</a>
+      <a href="../index.html#reference">표준값 표</a>
+      <a href="../index.html#guides">가이드</a>
+      <a href="../index.html#faq">자주 묻는 질문</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap article">
+  <p class="back"><a href="../index.html">&larr; 승강기 허브로 돌아가기</a></p>
+  <p class="crumb">가이드 / 비상 대응</p>
+  <h1>정전 시 갇힘 구조</h1>
+  <p class="lede">정전이 일어나면 승강기는 층과 층 사이에 멈추고, 안에 있던 승객은 갇히게 됩니다. 갇힌 승객은 어둡고 좁은 공간에서 불안을 느끼기 쉽고, 당황해서 문을 억지로 열거나 천장 비상구를 통해 나가려 할 수 있습니다. 그러나 승강기는 정전 시에도 제동 장치가 작동해 멈춰 있는 상태이므로, 침착하게 구조를 기다리는 것이 가장 안전합니다. 이 가이드는 정전 대응과 승객 구조 절차, 비상 전원 장치를 정리했습니다. 구조는 반드시 훈련받은 사람이 수행해야 합니다.</p>
+
+  <h2>정전 시 승강기는 어떻게 되나요</h2>
+  <p>전원이 끊기면 권상기 모터가 멈추고 제동 장치가 자동으로 작동해 카를 그 자리에서 멈추게 합니다. 제동 장치는 전원이 있을 때 풀리고 전원이 끊기면 스프링 힘으로 조여지는 구조라서, 정전 시에도 카가 아래로 떨어지지 않습니다. 카 내부 조명은 비상등으로 바뀌어 어둡지 않게 유지되고, 비상 호출 장치도 배터리로 동작합니다. 따라서 갇힌 승객은 조명이 꺼진 암흑 속에 있는 것이 아니라, 비상등이 켜진 카 안에서 구조를 기다리게 됩니다.</p>
+  <p>최근에 설치된 승강기 중에는 자동 구출 장치(ARD)가 있는 기종도 있습니다. 자동 구출 장치는 정전을 감지하면 배터리 전원으로 카를 가장 가까운 층까지 이동시킨 뒤 문을 열어 승객을 내보냅니다. 이 장치가 있으면 정전 시 갇힘 자체가 발생하지 않거나, 발생하더라도 짧은 시간 안에 해결됩니다. 자동 구출 장치가 없는 오래된 승강기는 수동 구조가 필요합니다. 건물의 승강기에 자동 구출 장치가 있는지, 있다면 배터리가 정상인지 평소에 확인해 두는 것이 중요합니다.</p>
+
+  <h2>갇힌 승객이 해야 할 일</h2>
+  <p>갇힌 승객이 가장 먼저 해야 할 일은 침착해지는 것입니다. 카는 안전한 상태로 멈춰 있으며, 공기가 부족해지는 일도 없습니다. 승강기 카는 밀폐된 공간이 아니라 환기구가 있어 공기가 통합니다. 비상 호출 버튼을 눌러 관리실이나 경비실에 알리고, 자신의 위치와 인원수를 전달합니다. 호출 버튼을 눌러도 응답이 없으면 휴대폰으로 관리실이나 유지보수 업체에 연락합니다. 카 안에 비상 연락처 안내가 붙어 있는 경우도 있으니 확인합니다.</p>
+  <p>절대로 해서는 안 되는 행동이 있습니다. 문을 억지로 벌리거나 발로 차는 행동은 도어와 인터록을 손상시키고, 문이 조금 열렸을 때 몸을 내밀면 추락 위험이 있습니다. 천장의 비상구를 열고 카 위로 올라가는 것은 더 위험합니다. 카 위에는 와이어로프와 기계 장치가 있고, 전원이 복구되면 카가 갑자기 움직일 수 있습니다. 아이가 함께 갇힌 경우에는 아이를 진정시키고, 구조가 오고 있으니 조금만 기다리자고 알려 주는 것이 중요합니다. 구조가 도착하기까지는 보통 30분 이내이므로, 침착하게 기다리는 것이 가장 빠른 해결책입니다.</p>
+
+  <h2>관리자와 구조자의 역할</h2>
+  <p>정전 신고를 받은 관리자는 먼저 어느 승강기에 몇 명이 갇혔는지 확인합니다. 비상 호출 장치로 갇힌 승객과 통화해 상황을 알리고, 구조가 가고 있으니 침착하게 기다리라고 안내합니다. 동시에 유지보수 업체에 연락하고, 건물 내 구조 담당자에게 출동을 지시합니다. 정전이 건물 전체인지, 일부 구간인지도 확인합니다. 건물 전체 정전이라면 발전기가 있는지, 비상 전원이 언제 복구되는지 파악해야 합니다. 승객의 건강 상태를 묻는 것도 잊지 말아야 합니다. 노약자나 어린이, 환자가 갇혀 있으면 구조 순서를 조정해야 합니다.</p>
+  <p>구조자는 현장에 도착하면 먼저 승강기 전원이 차단되었는지 확인합니다. 정전 상태에서도 전원이 갑자기 복구될 수 있으므로, 구조 작업 중에는 전원 스위치를 차단하고 잠금 장치를 걸어 두는 것이 원칙입니다. 다음으로 카가 멈춘 위치를 확인합니다. 카가 층 근처에 있으면 수동으로 카를 층까지 이동시킨 뒤 문을 엽니다. 카 이동은 권상기의 수동 핸들을 이용해 천천히 진행하며, 한 사람이 핸들을 돌리는 동안 다른 사람이 카 위치를 확인합니다. 카가 층에 정확히 도착하면 도어 열림 키로 문을 열고 승객을 내보냅니다. 승객이 내린 뒤에는 승강기 운행을 중단 상태로 두고, 전원이 복구된 뒤 점검을 거쳐 운행을 재개합니다.</p>
+
+  <h2>정전 대응 장치 비교</h2>
+  <table>
+    <tr><th>장치</th><th>기능</th><th>동작 방식</th><th>점검 항목</th></tr>
+    <tr><td>비상등</td><td>카 내부 조명 유지</td><td>배터리 전원</td><td>배터리 수명, 램프 점등</td></tr>
+    <tr><td>비상 호출 장치</td><td>관리실과 통화</td><td>배터리 전원</td><td>통화 품질, 버튼 동작</td></tr>
+    <tr><td>자동 구출 장치(ARD)</td><td>카 자동 이동 후 문 개방</td><td>배터리 전원으로 최단층 이동</td><td>배터리 충전, 동작 시험</td></tr>
+    <tr><td>비상 전원(발전기)</td><td>건물 전원 공급</td><td>발전기 기동</td><td>연료, 기동 시험</td></tr>
+    <tr><td>제동 장치</td><td>카 정지 유지</td><td>스프링 힘으로 조임</td><td>제동력, 마모 상태</td></tr>
+  </table>
+  <p>위의 장치는 정전 시 승객의 안전을 지키는 핵심 설비입니다. 배터리는 수명이 다하면 충전해도 금방 방전되므로, 정기 점검 때 배터리 상태를 확인하고 필요하면 교체해야 합니다. 자동 구출 장치는 실제 정전을 기다릴 수 없으므로, 정기적으로 모의 정전 시험을 실시해 정상 동작하는지 확인하는 것이 좋습니다.</p>
+
+  <h2>구조 훈련과 사전 준비</h2>
+  <p>갇힘 사고는 예고 없이 일어나므로, 평소에 구조 절차를 훈련해 두는 것이 중요합니다. 건물 관리자, 경비원, 유지보수 기술자는 정전 시 갇힘 구조 절차를 숙지하고, 정기적으로 모의 훈련을 실시해야 합니다. 훈련에서는 카 위치 확인, 수동 핸들 조작, 도어 열림 키 사용, 승객 안내를 실제로 연습합니다. 훈련을 해 본 사람과 해 보지 않은 사람은 실제 상황에서 침착함이 크게 다릅니다. 훈련 기록을 남기고, 새로 부임한 직원에게도 절차를 교육해야 합니다.</p>
+  <p>사전 준비물도 점검해야 합니다. 도어 열림 키, 수동 핸들, 손전등, 무전기, 비상 연락처 목록은 정해진 장소에 보관하고, 누구나 찾을 수 있게 합니다. 승강기마다 기종이 다르면 구조 방법도 다르므로, 각 승강기의 구조 절차서를 기계실이나 관리실에 비치합니다. 연락처 목록에는 유지보수 업체, 검사기관, 소방서 연락처를 포함합니다. 승객 중에 환자가 있거나 장시간 갇힘으로 건강이 나빠지면 119에 신고해야 합니다. 정전이 길어지면 카 내부 온도가 올라갈 수 있으므로, 구조가 지연될 경우 승객 상태를 수시로 확인합니다.</p>
+
+  <h2>정전 후 점검과 운행 재개</h2>
+  <p>전원이 복구되었다고 해서 바로 승강기를 운행해서는 안 됩니다. 정전 중에 카가 층 사이에 멈춰 있었거나, 구조 과정에서 수동으로 카를 이동시켰다면, 승강기 상태를 먼저 확인해야 합니다. 전원 복구 후에는 제어반의 경보 표시를 확인하고, 카를 무부하 상태로 시험운전합니다. 각 층에서 도어가 정상적으로 열리고 닫히는지, 카가 층에 정확히 멈추는지, 비상 호출 장치와 비상등이 정상 동작하는지를 확인합니다. 정전 중에 전압이 불안정했으면 인버터나 제어반에 경보가 남아 있을 수 있으므로, 경보 코드를 확인하고 필요하면 리셋합니다.</p>
+  <p>정전이 길어졌거나 낙뢰를 동반한 정전이었다면 점검을 더 꼼꼼히 해야 합니다. 낙뢰로 인한 서지가 제어반이나 인버터에 손상을 줄 수 있기 때문입니다. 제어반 내부의 퓨즈와 서지 보호 장치를 확인하고, 절연 저항을 측정해 이상이 없는지 확인합니다. 자동 구출 장치가 동작했다면 배터리 충전 상태를 확인하고, 다음 정전에 대비해 배터리가 충분히 충전되었는지 점검합니다. 점검 결과가 정상이면 운행을 재개하고, 이상이 발견되면 유지보수 업체에 연락해 수리한 뒤 운행합니다. 정전과 구조, 점검 과정을 기록으로 남기면 다음 정전 때 대응이 빨라집니다.</p>
+
+  <h2>단계별 구조 절차</h2>
+  <ol>
+    <li><strong>신고 접수와 확인.</strong> 비상 호출이나 신고로 갇힘 사실을 확인하고, 어느 승강기인지, 몇 명이 갇혔는지, 승객의 건강 상태는 어떤지 파악합니다.</li>
+    <li><strong>승객 안심과 안내.</strong> 비상 호출 장치로 승객과 통화해 구조가 가고 있으니 침착하게 기다리라고 알립니다. 문을 억지로 열지 말라고 당부합니다.</li>
+    <li><strong>업체 연락과 출동.</strong> 유지보수 업체에 연락하고, 건물 내 구조 담당자에게 출동을 지시합니다. 필요하면 소방서에도 신고합니다.</li>
+    <li><strong>전원 차단과 잠금.</strong> 현장에 도착하면 승강기 전원이 차단되었는지 확인하고, 전원 스위치에 잠금 장치를 겁니다.</li>
+    <li><strong>카 위치 확인.</strong> 층 표시기와 기계실의 로프 표시로 카가 멈춘 위치를 확인합니다. 카가 층 근처에 있는지, 층 사이에 있는지를 파악합니다.</li>
+    <li><strong>카 수동 이동.</strong> 제동 장치를 수동으로 풀고 권상기 핸들을 천천히 돌려 카를 가장 가까운 층까지 이동시킵니다. 이동 중에는 카 위치를 계속 확인합니다.</li>
+    <li><strong>도어 개방과 승객 구조.</strong> 카가 층에 정확히 도착하면 도어 열림 키로 문을 열고 승객을 내보냅니다. 승객이 내릴 때 발밑 단차를 알려 줍니다.</li>
+    <li><strong>승객 상태 확인.</strong> 구조된 승객의 건강 상태를 확인하고, 이상이 있으면 119에 신고하거나 의료기관으로 안내합니다.</li>
+    <li><strong>운행 중단과 기록.</strong> 승강기는 운행 중단 상태로 두고, 전원 복구 후 점검을 거쳐 운행을 재개합니다. 갇힘 일시, 원인, 조치 내용을 기록합니다.</li>
+  </ol>
+
+  <h2>흔한 문제</h2>
+  <ul>
+    <li><strong>비상 호출 장치 불통:</strong> 배터리가 방전되면 호출 장치가 동작하지 않습니다. 배터리 상태를 정기 점검에서 확인해야 합니다.</li>
+    <li><strong>구조 절차 미숙지:</strong> 훈련을 받지 않은 관리자는 현장에서 당황해 시간을 허비합니다. 정기 훈련이 반드시 필요합니다.</li>
+    <li><strong>도어 열림 키 분실:</strong> 키가 없으면 문을 열 수 없습니다. 키는 정해진 장소에 보관하고, 분실 시 즉시 재발급받아야 합니다.</li>
+    <li><strong>전원 복구 후 바로 운행:</strong> 정전 후 점검 없이 운행하면 고장이 숨어 있을 수 있습니다. 전원 복구 후에는 시험운전을 거쳐 운행을 재개합니다.</li>
+    <li><strong>승객의 무리한 탈출 시도:</strong> 문을 억지로 열거나 천장 비상구로 나가려 하면 추락 위험이 있습니다. 승객에게 침착히 기다리라고 안내해야 합니다.</li>
+    <li><strong>자동 구출 장치 배터리 방치:</strong> 배터리가 낡으면 정전 시 장치가 동작하지 않습니다. 배터리 교체 주기를 관리해야 합니다.</li>
+  </ul>
+
+  <h2>자주 묻는 질문</h2>
+  <h3>갇힌 승객은 질식할 위험이 없나요?</h3>
+  <p>없습니다. 승강기 카는 밀폐된 공간이 아니며, 환기구가 있어 공기가 계속 통합니다. 정전으로 환기 팬이 멈춰도 자연 환기가 되므로 산소가 부족해지지 않습니다. 다만 여름철에는 카 내부 온도가 올라갈 수 있어 승객이 더위를 느낄 수 있습니다. 구조가 지연되면 승객의 상태를 수시로 확인하고, 필요하면 119에 신고해 도움을 요청합니다.</p>
+  <h3>정전 시 구조는 보통 얼마나 걸리나요?</h3>
+  <p>관리자가 현장에 있고 구조 절차를 숙지하고 있으면 보통 30분 이내에 구조가 완료됩니다. 유지보수 업체가 출동해야 하는 경우에는 이동 시간만큼 더 걸릴 수 있습니다. 야간이나 주말에는 출동이 늦어질 수 있으므로, 건물 자체 구조 인력을 두는 것이 좋습니다. 자동 구출 장치가 있는 승강기는 정전 후 몇 분 안에 자동으로 승객을 내보냅니다.</p>
+  <h3>갇힌 승객이 직접 문을 열어도 되나요?</h3>
+  <p>안 됩니다. 문을 억지로 열면 도어와 인터록이 손상되고, 문이 조금 열렸을 때 몸을 내밀면 추락할 위험이 있습니다. 카가 층에 정확히 멈추지 않은 상태에서는 문을 열어도 승강로 벽만 보일 뿐입니다. 문 열기는 훈련받은 구조자가 도어 열림 키를 이용해 카가 층에 도착한 것을 확인한 뒤에 하는 것이 원칙입니다. 승객은 비상 호출 버튼으로 알리고 침착하게 기다려야 합니다.</p>
+
+  <div class="safety"><strong>안전 수칙:</strong> 구조 작업 중에는 반드시 승강기 전원을 차단하고 잠금 장치를 걸어야 합니다. 전원이 갑자기 복구되면 카가 움직일 수 있어 매우 위험합니다. 카를 수동으로 이동시킬 때는 천천히, 그리고 카 위치를 계속 확인하면서 진행하십시오. 승객을 구조할 때는 도어 열림 키를 사용하고, 문을 억지로 벌리지 마십시오. 구조 경험이 없는 사람은 혼자 구조를 시도하지 말고 유지보수 업체나 소방서에 신고하십시오.</div>
+
+  <div class="related">
+    <h3>관련 계산기</h3>
+    <ul>
+      <li><a href="../index.html#calc-traffic">교통량·평균 대기시간 계산기</a> — 승강기 대수와 이용 인원 계획</li>
+      <li><a href="../index.html#calc-maintenance">유지보수 비용 계산기</a> — 비상 장치 점검 예산 반영</li>
+    </ul>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <h4>승강기 허브</h4>
+        <p>승강기 설계·설치·유지보수를 위한 무료 계산기. KS B ISO 4190 기준 · 380V 3상 / 220V 단상 · 60Hz.</p>
+        <p style="margin-top:8px">motorwindinghub.github.io/elevator-hub/</p>
+      </div>
+      <div>
+        <h4>계산기</h4>
+        <ul>
+          <li><a href="../index.html#calc-capacity">승강기 용량·정원 계산기</a></li>
+          <li><a href="../index.html#calc-shaft">승강로 치수 계산기</a></li>
+          <li><a href="../index.html#calc-power">소요 동력 계산기</a></li>
+          <li><a href="../index.html#calc-traffic">교통량·평균 대기시간 계산기</a></li>
+          <li><a href="../index.html#calc-maintenance">유지보수 비용 계산기</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>가이드</h4>
+        <ul>
+          <li><a href="elevator-installation-basics.html">승강기 설치 기초</a></li>
+          <li><a href="wire-rope-inspection.html">와이어로프 점검과 교체</a></li>
+          <li><a href="door-troubleshooting.html">승강기 도어 고장과 대처</a></li>
+          <li><a href="power-outage-rescue.html">정전 시 갇힘 구조</a></li>
+          <li><a href="periodic-inspection.html">승강기 정기검사와 안전관리</a></li>
+          <li><a href="noise-vibration.html">승강기 소음·진동 저감 대책</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copy">© 2026 승강기 허브 · 모든 계산은 브라우저 안에서 처리됩니다 · 결과는 추정치입니다. 제조사 자료와 관련 법령을 확인하십시오.</div>
+  </div>
+</footer>
+
+</body>
+</html>
